@@ -1,0 +1,102 @@
+.portada_Contacto {
+    background-image: url(../Pictures/wepik--202251-212210.jpg);
+    height: 35rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Contacto {
+    margin: 6rem 10% 0rem 10%;
+
+
+    h1 {
+    text-align: center;
+    }
+}
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+
+    form {
+    margin: 2rem 10%;
+    font-size: 1rem;
+    }
+    form input {
+    font-family: $parrafo;
+    }
+    form textarea {
+    font-family: $parrafo;
+    }
+    .nombreapellido{
+        input{
+        height: 35px;
+        width: (100%/2);
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid black;
+        font-size: 1rem;
+        }
+    }
+    .email{
+        input{
+        height: 35px;
+        width: 100%;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid black;
+        font-size: 1rem;
+        }
+    }
+    .nacimiento {
+       input{
+         height: 35px;
+         width: 50%;
+         outline: none;
+         border-radius: 5px;
+        border: 1px solid black;
+        font-size: 1rem;
+       }
+    }
+    .razones{
+      select{
+       height: 35px;
+       width: 50%;
+       outline: none;
+       border-radius: 5px;
+       border: 1px solid $negro;
+    }
+    }
+    .comentarios{ 
+        textarea{
+         height: 105px;
+         width: 100%;
+         outline: none;
+         border-radius: 5px;
+         border: 1px solid $negro;
+         font-size: 1rem;
+        }
+    }
+    .novedades{ 
+        input{
+          height: 12px;
+          width: 5%;
+          outline: none;
+          border-radius: 5px;
+          border: 1px solid $negro;
+          font-size: 1rem;
+        }
+    }
+
+    .button_contacto{ 
+        input{
+          height: 35px;
+          width: 100%;
+          background-color: $orange;
+          border-radius: 5px;
+          border: 3px solid $negro;
+        }
+    }
+}

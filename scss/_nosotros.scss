@@ -1,0 +1,35 @@
+.portada_Nosotros {
+    background-image: url(../Pictures/PortadaNosotros.jpg);
+    height: 35rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nosotros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+    .nosotros-texto {
+        text-align: center;
+        font-weight: 400;
+        margin: 5% 10% 5% 0%;
+        width: 60%;
+    h2 {
+    text-align: center;
+    }
+
+    p {
+    font-size: 1.4rem;
+    }
+    }
+    .nosotros-img{
+    margin: 5% 5% 5% 10%;
+    width: 40%;
+    
+    img{
+    width: 100%;
+    }
+    }
+}

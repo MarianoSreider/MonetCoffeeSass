@@ -1,0 +1,227 @@
+@media screen and (max-width: 992px) {
+    .nosotros-img {
+        margin: 5% 5% 5% 5%;
+        width: 45%;
+    }
+    
+    .nosotros-texto {
+        margin: 5% 5% 5% 0%;
+        text-align: center;
+        width: 55%;
+    }
+    
+    .nosotros-texto p {
+        font-size: 0.9rem;
+    }
+    .menuu {
+        height: 55rem;
+    }
+    
+    .menu_detalle {
+        height: 23rem;
+        width: 90%;
+        text-align: center;
+        margin-top: 7%;
+        padding: 2% 2%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+/* Media Screen for Index */
+
+    .portada {
+        height: 25rem;
+    }
+    
+    .nav-link {
+        font-size: 1rem;
+        padding: .7rem 1rem;
+    }
+
+    .bg-transparent {
+        background-color: black !important;
+        z-index: 1;
+    }
+    .logo {
+        background-image: url(../Pictures/celularlogo.png);
+        background-repeat: no-repeat;
+        left: 0.3rem;
+    }
+    .titulo{
+        font-size: 1.5rem;
+        top: 10rem;
+    }
+    
+    .boton_menu {
+        top: 13rem;
+        background-color: $orange;
+        width: 8rem;
+    
+        a {
+           font-size: 1rem;
+        }
+    }
+    .home_nosotros-texto {
+        width: 100%;
+        justify-items: center;
+        margin: 8% 7% 5% 3%;
+        font-weight: 100;
+    
+        h2 {
+            font-size: 1.2rem;
+        }
+    
+        p {
+        font-size: 0.8rem;
+        }
+        a {
+            font-size: 0.8rem;
+            width: 8rem;
+        }
+    }
+    .home_nosotros-img{
+    
+            img{
+                width: 80%;
+                }
+    }
+    
+
+    .home_productos-texto {
+        width: 100%;
+        justify-items: center;
+        margin: 8% 7% 5% 3%;
+        font-weight: 100;
+    
+        h2 {
+            font-size: 1.2rem;
+        }
+    
+        p {
+        font-size: 0.8rem;
+        }
+        a {
+            font-size: 0.8rem;
+            width: 8rem;
+        }
+    }
+    .home_productos-video{
+       
+        float: right;
+    }
+    
+    
+    
+    footer {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    
+    img {
+        margin: 0.5rem;
+    }
+    }
+    .footer_coffee {
+        justify-self: center;
+
+    p {
+        font-weight: 1 00;
+        font-size: 0.8rem;
+        text-align: center;
+      }
+    }
+    .footer_logo {
+        justify-self: center;
+        margin: 1rem 0rem 0rem 0rem;
+    }
+
+    .portada_Productos {
+    height: 25rem;
+    h1{
+    margin: 5% 20% 5% 20%;
+    font-size: 1.2rem;
+    }
+    p {
+    font-size: 0.8rem;
+    }
+    }
+    .contenedor_productos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 2fr 1fr 2fr 1fr;
+    grid-template-areas: 
+    "c"
+    "ab"
+    "d"
+    "ef"
+    "g" 
+    "gh";
+    justify-items: center;
+     h2{
+        font-size: 1.2rem;
+       }
+     p {
+        font-size: 0.8rem;
+        }
+
+     img {
+        width: 100%;
+        }
+
+    .ab{
+    text-align: center;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    top: 0%; 
+    }
+    .ef{
+    text-align: center;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    top: 0%;
+    }
+
+    .gh{
+    text-align: center;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    top: 0%;
+    }
+    }
+
+    .menuu {
+        height: 25rem;
+    }
+    .menudetalle {
+        margin: 10% 10% 5% 10%;
+        text-align: center;
+        p {
+           font-size: 0.85rem;
+        }
+    }
+
+    .portada_Nosotros {
+        height: 25rem;
+        }
+
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .nosotros-img {
+        width: 80%;
+        align-self: center;
+        margin: 10%;
+    }
+    
+    .nosotros-texto {
+        text-align: center;
+        width: 90%;
+        align-self: center;
+        margin: 5%;
+    }
+    
+}

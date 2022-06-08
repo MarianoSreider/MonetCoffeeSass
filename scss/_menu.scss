@@ -1,0 +1,45 @@
+.portada_Menu {
+    background-image: url(../Pictures/PortadaMenu.jpg);
+    height: 35rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menuu {
+    background-image: url(../Pictures/menufondo2.jpg);
+    height: 45rem;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu_lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .menudetalle {
+        background-color: rgb(245, 240, 240);
+        height: 80%;
+        width: 80%;
+        text-align: center;
+        margin-top: 8rem;
+        padding: 2rem;
+        color: #B5966A;    
+
+        &:hover{
+            transform: scale(1.2,1.2);
+        }
+        h2{
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+    }
+
+}
+
+
+

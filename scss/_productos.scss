@@ -1,0 +1,73 @@
+.portada_Productos {
+    background-image: url(../Pictures/Portadaproductos.jpg);
+    height: 35rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.productos_texto {
+    margin: 10% 20% 5% 20%;
+    text-align: center;
+     
+    p {
+    font-family: $parrafo;
+    font-size: 1.2rem;
+    }
+}
+.contenedor_productos{
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "ab c"
+    "d ef"
+    "gh g";
+    justify-items: center;
+
+    h2{
+    font-size: 1.4rem;
+    }
+
+    p {
+    font-family: $parrafo;
+    font-size: 1rem;
+    }
+
+    img {
+    width: 100%;
+    }
+
+
+    .ab{
+    grid-area: ab;
+    text-align: right;
+    position: relative;
+    top: 30%;
+    margin-left: 20%;
+    }
+    .ef{
+    grid-area: ef;
+    position: relative;
+    top: 30%;
+    margin-right: 20%;
+    }
+    .c{
+    grid-area: c;
+    justify-self: center;
+    }
+    .d{
+    grid-area: d;
+    justify-self: center;
+    }
+    .gh{
+    grid-area: gh;
+    text-align: right;
+    position: relative;
+    top: 30%;
+    margin-left: 20%;
+    }
+    .g{
+    grid-area: g;
+    justify-self: center;
+    }
+}

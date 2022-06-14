@@ -28,15 +28,15 @@
         font-size: 0.9rem;
     }
     .menuu {
-        height: 45rem;
+        height: 35rem;
     }
     
-    .menu_detalle {
-        height: 23rem;
-        width: 90%;
+    .menudetalle {
         text-align: center;
-        margin-top: 7%;
-        padding: 2% 2%;
+        padding: 1%;
+        p {
+           font-size: 1rem;
+        }
     }
 }
 @media screen and (max-width: 768px) {
@@ -259,20 +259,36 @@
     .portada_Menu{
         height: 25rem;
     }
+
     .menuu {
-        height: 30rem;
+        height: 20rem;
     }
-    .menudetalle {
-        text-align: center;
-        padding: 1%;
-        p {
-           font-size: 0.85rem;
+    .menu_lista {
+    
+        .menudetalle {
+            height: 90%;
+            width: 90%;
+            margin-top: 4rem;
+            padding: 0.1rem;
+              
+    
+            &:hover{
+                transform: scale(1.1,1.1);
+            }
+            h2{
+                font-size: 18px;
+                font-weight: 300;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 0.85rem;
+            }
         }
-    }
 
     .portada_Nosotros {
         height: 25rem;
         }
+    }
 
     .nosotros {
         display: flex;

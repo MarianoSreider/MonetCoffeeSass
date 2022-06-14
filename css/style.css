@@ -134,11 +134,10 @@ nav .navbar-toggler {
       transform: translateX(-50%); }
     .home_nosotros .home_nosotros-texto a:hover {
       background-color: #110202; }
-
-.home_nosotros-img img {
-  width: 80%;
-  margin-left: 15%;
-  margin-top: 15%; }
+  .home_nosotros .home_nosotros-img img {
+    width: 80%;
+    margin-left: 15%;
+    margin-top: 15%; }
 
 .home_productos {
   display: flex;
@@ -175,7 +174,7 @@ nav .navbar-toggler {
   .home_productos video {
     margin-left: 50%;
     margin-right: 10%;
-    margin-top: 5%;
+    margin-top: 7%;
     float: right;
     width: 80%;
     height: 70%; }
@@ -228,14 +227,14 @@ nav .navbar-toggler {
 .menu_lista {
   display: flex;
   flex-direction: row;
-  justify-content: center; }
+  justify-content: space-around; }
   .menu_lista .menudetalle {
     background-color: #f5f0f0;
     height: 80%;
     width: 80%;
     text-align: center;
     margin-top: 8rem;
-    padding: 2rem;
+    padding: 2.2rem;
     color: #B5966A; }
     .menu_lista .menudetalle:hover {
       transform: scale(1.2, 1.2); }
@@ -407,13 +406,12 @@ footer {
   .nosotros-texto p {
     font-size: 0.9rem; }
   .menuu {
-    height: 45rem; }
-  .menu_detalle {
-    height: 23rem;
-    width: 90%;
+    height: 35rem; }
+  .menudetalle {
     text-align: center;
-    margin-top: 7%;
-    padding: 2% 2%; } }
+    padding: 1%; }
+    .menudetalle p {
+      font-size: 1rem; } }
 
 @media screen and (max-width: 768px) {
   .home_nosotros {
@@ -560,13 +558,21 @@ footer {
   .portada_Menu {
     height: 25rem; }
   .menuu {
-    height: 30rem; }
-  .menudetalle {
-    text-align: center;
-    padding: 1%; }
-    .menudetalle p {
+    height: 20rem; }
+  .menu_lista .menudetalle {
+    height: 90%;
+    width: 90%;
+    margin-top: 4rem;
+    padding: 0.1rem; }
+    .menu_lista .menudetalle:hover {
+      transform: scale(1.1, 1.1); }
+    .menu_lista .menudetalle h2 {
+      font-size: 18px;
+      font-weight: 300;
+      margin-bottom: 10px; }
+    .menu_lista .menudetalle p {
       font-size: 0.85rem; }
-  .portada_Nosotros, .portada_Menu, .portada_Productos, .portada_Contacto {
+  .menu_lista .portada_Nosotros, .menu_lista .portada_Menu, .menu_lista .portada_Productos, .menu_lista .portada_Contacto {
     height: 25rem; }
   .nosotros {
     display: flex;

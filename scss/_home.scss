@@ -85,12 +85,6 @@ nav {
     font-weight: bold;
 }
 @mixin home-sections {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
-     width: 100%;
-
-    .home_nosotros-texto {
      width: 50%;
      justify-items: center;
      margin: 8% 7% 5% 3%;
@@ -127,9 +121,15 @@ nav {
     }
 
     }
-}
+
 .home_nosotros{
-     @include home-sections()
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     width: 100%;
+
+.home_nosotros-texto {
+    @include home-sections()
 }
 .home_nosotros-img{
     
@@ -139,7 +139,7 @@ nav {
         margin-top: 15%;
         }
 }
-
+}
 
 .home_productos{
     display: flex;
@@ -147,43 +147,12 @@ nav {
     justify-content: space-between;
 
     .home_productos-texto {
-    width: 50%;
-    justify-items: center;
-    margin: 8% 7% 5% 3%;
-    font-weight: 300;
-    h2 {
-        text-align: center;
-        margin-bottom: 7%;
-    }
-    p {
-        font-size: 1.4rem;
-    }
-    a {
-        width: 9rem;
-        color: white;
-        font-family: $titulos;
-        text-decoration: none;
-        font-weight: 400;
-        background-color: $orange;
-        padding: 0.3rem;
-        border-radius: 0.3rem;
-        display: inline-block;
-        transition: 0.5s;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.11);
-        position: relative;
-        top: 5%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    a:hover {
-        background-color: $negro;
-    }
-
+        @include home-sections()
     }
     video{
         margin-left: 50%;
         margin-right: 10%;
-        margin-top: 5%;
+        margin-top: 7%;
         float: right;
         width: 80%;
         height: 70%;

@@ -15,7 +15,7 @@
 .menu_lista {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
 
     .menudetalle {
         background-color: rgb(245, 240, 240);
@@ -23,7 +23,7 @@
         width: 80%;
         text-align: center;
         margin-top: 8rem;
-        padding: 2rem;
+        padding: 2.2rem;
         color: #B5966A;    
 
         &:hover{

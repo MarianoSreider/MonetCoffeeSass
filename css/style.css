@@ -572,7 +572,7 @@ footer {
       margin-bottom: 10px; }
     .menu_lista .menudetalle p {
       font-size: 0.85rem; }
-  .menu_lista .portada_Nosotros, .menu_lista .portada_Menu, .menu_lista .portada_Productos, .menu_lista .portada_Contacto {
+  .portada_Nosotros, .portada_Menu, .portada_Productos, .portada_Contacto {
     height: 25rem; }
   .nosotros {
     display: flex;

@@ -1,9 +1,6 @@
 .portada_Contacto {
     background-image: url(../Pictures/wepik--202251-212210.jpg);
-    height: 35rem;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend .portada_Nosotros
 }
 
 .Contacto {

@@ -203,14 +203,15 @@
     }
 
     .portada_Productos {
-    height: 25rem;
-    h1{
+    height: 25rem
+    }
+    .productos_texto {
     margin: 5% 20% 5% 20%;
     font-size: 1.2rem;
-    }
-    p {
-    font-size: 0.8rem;
-    }
+    
+        p {
+        font-size: 0.8rem;
+        }
     }
     .contenedor_productos{
     display: grid;
@@ -255,9 +256,11 @@
     top: 0%;
     }
     }
-
+    .portada_Menu{
+        height: 25rem;
+    }
     .menuu {
-        height: 28rem;
+        height: 30rem;
     }
     .menudetalle {
         text-align: center;
@@ -276,7 +279,6 @@
         flex-direction: column;
         justify-content: center;
     
-    
         .nosotros-img {
         width: 70%;
         align-self: center;
@@ -288,7 +290,10 @@
         width: 90%;
         align-self: center;
         margin: 5%;
+        p {
+            font-size: 1rem;
         }
+    }
     }
     .portada_Contacto{
         height: 25rem;

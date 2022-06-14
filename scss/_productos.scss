@@ -1,9 +1,6 @@
 .portada_Productos {
     background-image: url(../Pictures/Portadaproductos.jpg);
-    height: 35rem;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
+   @extend .portada_Nosotros
 }
 .productos_texto {
     margin: 10% 20% 5% 20%;

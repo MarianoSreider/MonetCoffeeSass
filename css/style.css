@@ -258,9 +258,7 @@ nav .navbar-toggler {
   display: grid;
   grid-template-columns: 1fr, 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "ab c"
- "d ef"
- "gh g";
+  grid-template-areas: "ab c" "d ef" "gh g";
   justify-items: center; }
   .contenedor_productos h2 {
     font-size: 1.4rem; }
@@ -318,7 +316,7 @@ nav .navbar-toggler {
     font-family: "Raleway", sans-serif; }
   .formulario .nombreapellido input {
     height: 35px;
-    width: (100%/2);
+    width: 49%;
     outline: none;
     border-radius: 5px;
     border: 1px solid black;
@@ -536,12 +534,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 1fr 2fr 1fr 2fr 1fr;
-    grid-template-areas: "c"
- "ab"
- "d"
- "ef"
- "g" 
- "gh";
+    grid-template-areas: "c" "ab" "d" "ef" "g"  "gh";
     justify-items: center; }
     .contenedor_productos h2 {
       font-size: 1.2rem; }

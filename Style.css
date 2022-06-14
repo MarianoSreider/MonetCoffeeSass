@@ -34,30 +34,7 @@
     margin-bottom: 1rem;
     margin-right: 0.3rem;
 }
-.contenedor_index{
-    width: 100%;
-	margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(4, auto);
-    grid-template-areas: 
-        "home_nosotros home_nosotros home_nosotros home_nosotros"
-        "home_productos home_productos home_productos home_productos"
-        "galeria galeria galeria galeria" 
-        "footerindex footerindex footerindex footerindex"; 
-}
-.home_nosotros{
-    grid-area: home_nosotros;
-}
-.home_productos{
-    grid-area: home_productos;
-}
-.galeria{
-    grid-area: galeria;
-}
-.footerindex{
-    grid-area: footerindex;
-}
+
 
 a {
     color: white;
@@ -152,7 +129,7 @@ p {
     width: 50%;
     justify-items: center;
     margin: 8% 7% 5% 3%;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .home_nosotros-texto h2 {
@@ -194,18 +171,18 @@ p {
 
 /* Home Page Productos*/
 
-.home_productos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-}
+.home_productos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
 
 .home_productos-texto {
     width: 50%;
     justify-items: center;
-    margin: 8% 7% 5% 3%;
-    font-weight: 400;
+    margin: 2% 7% 5% 3%;
+    font-weight: 300;
 }
 
 .home_productos-texto h2 {
@@ -217,10 +194,13 @@ p {
     font-size: 1.4rem;
 }
 
-.home_productos-video{
+video{
     margin-left: 50%;
-    margin-top: 15%;
+    margin-right: 10%;
+    margin-top: 5%;
     float: right;
+    width: 80%;
+    height: 70%;
 }
 
 .home_productos-texto a {
@@ -315,7 +295,7 @@ footer img {
 .menu_lista {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .menudetalle {
@@ -439,7 +419,7 @@ footer img {
     background-size: cover;
 }
 .productos_texto {
-    margin: 10% 20% 5% 20%;
+    margin: 5% 20% 5% 20%;
     text-align: center;
 }
 
@@ -501,6 +481,7 @@ footer img {
 .g{
     grid-area: g;
     justify-self: center;
+    margin-bottom: 50px;
 }
 
 /* Html Nosotros */
@@ -541,6 +522,21 @@ footer img {
 }
 
 @media screen and (max-width: 992px) {
+    .nav-link {
+        font-size: 1rem;
+        padding: .7rem 1rem;
+    }
+
+    .bg-transparent {
+        background-color: black !important;
+        z-index: 1;
+    }
+    .logo {
+        background-image: url(./Pictures/celularlogo.png);
+        background-repeat: no-repeat;
+        left: 0.3rem;
+    }
+
     .nosotros-img {
         margin: 5% 5% 5% 5%;
         width: 45%;
@@ -556,7 +552,7 @@ footer img {
         font-size: 0.9rem;
     }
     .menuu {
-        height: 55rem;
+        height: 45rem;
     }
     
     .menu_detalle {
@@ -567,6 +563,47 @@ footer img {
         padding: 2% 2%;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .home_nosotros {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .home_nosotros-img img {
+        width: 60%;
+        margin-left: 25%;
+        margin-top: 10%;
+    }
+
+    .home_nosotros-texto {
+        font-weight: 100;
+        width: 100%;
+        margin-left: 5%;
+        margin-right: 10%;
+    }
+    
+    .home_productos{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+    }
+    .home_productos-texto {
+        font-weight: 100;
+        width: 100%;
+        
+    }
+    video{
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 5%;
+        float: none;
+    }
+}
+
 
 @media screen and (max-width: 576px) {
 
@@ -591,23 +628,28 @@ footer img {
         left: 0.3rem;
     }
     .titulo{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         top: 10rem;
     }
     
     .boton_menu {
-        top: 13rem;
+        top: 15rem;
         background-color: darkgoldenrod;
         width: 8rem;
     }
     .boton_menu a {
        font-size: 1rem;
     }
+    .home_nosotros{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+    }
     .home_nosotros-texto {
-        width: 100%;
-        justify-items: center;
-        margin: 8% 7% 5% 3%;
         font-weight: 100;
+        width: 100%;
+        margin: 4% 5% 7% 5%
     }
     
     .home_nosotros-texto h2 {
@@ -619,18 +661,25 @@ footer img {
     }
     
     .home_nosotros-img img {
-        width: 80%;
+            width: 60%;
+            margin-left: 25%;
+            margin-top: 10%;
     }
     
     .home_nosotros-texto a {
        font-size: 0.8rem;
        width: 8rem;
     }
+    .home_productos{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+    }
     .home_productos-texto {
-        width: 100%;
-        justify-items: center;
-        margin: 8% 7% 5% 3%;
         font-weight: 100;
+        width: 100%;
+        margin: 4% 5% 7% 5%
     }
     
     .home_productos-texto h2 {
@@ -641,9 +690,11 @@ footer img {
         font-size: 0.8rem;
     }
     
-    .home_productos-video{
-       
-        float: right;
+    video{
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 5%;
+        float: none;
     }
     
     .home_productos-texto a {
@@ -730,12 +781,16 @@ footer img {
     }
 
     /* Media Screen for menu.html */
-    .menuu {
+    .portada_Menu {
         height: 25rem;
+        background-size: cover;
+    }
+    .menuu {
+        height: 28rem;
     }
     .menudetalle {
-        margin: 10% 10% 5% 10%;
         text-align: center;
+        padding: 1%;
     }
 
     .menudetalle  p {
@@ -753,7 +808,7 @@ footer img {
     }
     
     .nosotros-img {
-        width: 80%;
+        width: 70%;
         align-self: center;
         margin: 10%;
     }
@@ -763,6 +818,15 @@ footer img {
         width: 90%;
         align-self: center;
         margin: 5%;
+    }
+
+    .portada_Contacto{
+        height: 25rem;
+    }
+    
+    .nombreapellido input{
+        width: 80%;
+        margin: 10px;  
     }
     
 }

@@ -93,21 +93,7 @@ nav {
     font-weight: bold;
 }
 
-    
-.contenedor_index{
-    width: 100%;
-	margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(4, auto);
-    grid-template-areas: 
-        "home_nosotros home_nosotros home_nosotros home_nosotros"
-        "home_productos home_productos home_productos home_productos"
-        "galeria galeria galeria galeria" 
-        "footerindex footerindex footerindex footerindex"; 
-}
 .home_nosotros{
-     grid-area: home_nosotros;
      display: flex;
      flex-direction: row;
      justify-content: space-between;
@@ -117,7 +103,7 @@ nav {
      width: 50%;
      justify-items: center;
      margin: 8% 7% 5% 3%;
-     font-weight: 400;
+     font-weight: 300;
 
     h2{
         text-align: center;
@@ -163,17 +149,15 @@ nav {
 
 
 .home_productos{
-    grid-area: home_productos;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
 
     .home_productos-texto {
     width: 50%;
     justify-items: center;
     margin: 8% 7% 5% 3%;
-    font-weight: 400;
+    font-weight: 300;
     h2 {
         text-align: center;
         margin-bottom: 7%;
@@ -184,10 +168,10 @@ nav {
     a {
         width: 9rem;
         color: white;
-        font-family: 'Poppins', sans-serif;
+        font-family: $titulos;
         text-decoration: none;
         font-weight: 400;
-        background-color:darkgoldenrod;
+        background-color: $orange;
         padding: 0.3rem;
         border-radius: 0.3rem;
         display: inline-block;
@@ -203,15 +187,17 @@ nav {
     }
 
     }
-    .home_productos-video{
+    video{
         margin-left: 50%;
-        margin-top: 15%;
+        margin-right: 10%;
+        margin-top: 5%;
         float: right;
+        width: 80%;
+        height: 70%;
     }
 }
 
 .galeria{
-    grid-area: galeria;
     display: flex;
     flex-direction: row;
     img {
@@ -219,9 +205,7 @@ nav {
         height: 100%;
     }
 }
-.footerindex{
-     grid-area: footerindex;
-}
+
 
 
 

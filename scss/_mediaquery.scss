@@ -1,4 +1,18 @@
 @media screen and (max-width: 992px) {
+    .nav-link {
+        font-size: 1rem;
+        padding: .7rem 1rem;
+    }
+
+    .bg-transparent {
+        background-color: black !important;
+        z-index: 1;
+    }
+    .logo {
+        background-image: url(./Pictures/celularlogo.png);
+        background-repeat: no-repeat;
+        left: 0.3rem;
+    }
     .nosotros-img {
         margin: 5% 5% 5% 5%;
         width: 45%;
@@ -14,7 +28,7 @@
         font-size: 0.9rem;
     }
     .menuu {
-        height: 55rem;
+        height: 45rem;
     }
     
     .menu_detalle {
@@ -25,6 +39,46 @@
         padding: 2% 2%;
     }
 }
+@media screen and (max-width: 768px) {
+    .home_nosotros {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+    
+    .home_nosotros-img img {
+        width: 60%;
+        margin-left: 25%;
+        margin-top: 10%;
+    }
+
+    .home_nosotros-texto {
+        font-weight: 100;
+        width: 100%;
+        margin-left: 5%;
+        margin-right: 10%;
+    }
+}
+    
+    .home_productos{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+    
+    .home_productos-texto {
+        font-weight: 100;
+        width: 100%;    
+    }
+    video{
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 5%;
+        float: none;
+    }
+}
+}
+
 
 @media screen and (max-width: 576px) {
 
@@ -32,6 +86,16 @@
 
     .portada {
         height: 25rem;
+            
+        .boton_menu {
+            top: 15rem;
+            background-color: $orange;
+            width: 8rem;
+    
+        a {
+           font-size: 1rem;
+        }
+        }
     }
     
     .nav-link {
@@ -52,28 +116,22 @@
         font-size: 1.5rem;
         top: 10rem;
     }
-    
-    .boton_menu {
-        top: 13rem;
-        background-color: $orange;
-        width: 8rem;
-    
-        a {
-           font-size: 1rem;
-        }
-    }
-    .home_nosotros-texto {
-        width: 100%;
-        justify-items: center;
-        margin: 8% 7% 5% 3%;
-        font-weight: 100;
-    
+    .home_nosotros{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        .home_nosotros-texto {
+             width: 100%;
+             margin: 4% 5% 7% 5%;
+             font-weight: 100;
+            
         h2 {
-            font-size: 1.2rem;
+             font-size: 1.2rem;
         }
     
         p {
-        font-size: 0.8rem;
+             font-size: 0.8rem;
         }
         a {
             font-size: 0.8rem;
@@ -81,17 +139,23 @@
         }
     }
     .home_nosotros-img{
-    
             img{
-                width: 80%;
+                width: 60%;
+                margin-left: 25%;
+                margin-top: 10%;
                 }
     }
+    }
     
+    .home_productos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
 
-    .home_productos-texto {
+        .home_productos-texto {
         width: 100%;
-        justify-items: center;
-        margin: 8% 7% 5% 3%;
+        margin: 4% 5% 7% 5%;
         font-weight: 100;
     
         h2 {
@@ -106,12 +170,13 @@
             width: 8rem;
         }
     }
-    .home_productos-video{
-       
-        float: right;
+    video{
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 5%;
+        float: none;
     }
-    
-    
+    }
     
     footer {
         display: grid;
@@ -121,19 +186,20 @@
     img {
         margin: 0.5rem;
     }
-    }
-    .footer_coffee {
-        justify-self: center;
+    
+        .footer_coffee {
+            justify-self: center;
 
-    p {
-        font-weight: 1 00;
-        font-size: 0.8rem;
-        text-align: center;
-      }
-    }
-    .footer_logo {
+        p {
+            font-weight: 1 00;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+        }
+        .footer_logo {
         justify-self: center;
         margin: 1rem 0rem 0rem 0rem;
+        }
     }
 
     .portada_Productos {
@@ -191,11 +257,11 @@
     }
 
     .menuu {
-        height: 25rem;
+        height: 28rem;
     }
     .menudetalle {
-        margin: 10% 10% 5% 10%;
         text-align: center;
+        padding: 1%;
         p {
            font-size: 0.85rem;
         }
@@ -209,19 +275,28 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
     
-    .nosotros-img {
-        width: 80%;
+    
+        .nosotros-img {
+        width: 70%;
         align-self: center;
         margin: 10%;
-    }
+        }
     
-    .nosotros-texto {
+        .nosotros-texto {
         text-align: center;
         width: 90%;
         align-self: center;
         margin: 5%;
+        }
+    }
+    .portada_Contacto{
+        height: 25rem;
+    }
+    
+    .nombreapellido input{
+        width: 80%;
+        margin: 10px;  
     }
     
 }
